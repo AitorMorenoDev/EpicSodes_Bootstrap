@@ -1,0 +1,128 @@
+@use "mixin.scss" as mixinTools;
+@use "globals.scss" as *;
+
+.mainPerfil {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Estilos del perfil
+#datosPerfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1px solid black;
+    box-shadow: 0.3em 0.3em 0.4em rgba(0, 0, 0, 1);
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+// Estilos de las compras realizadas
+#comprasRealizadas {
+  margin-top: 1em;
+  width: 100%;
+  margin-right: 2em;
+
+  h3 {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+.compraRealizada {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: $color_fondo_card;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 1em 0;
+  overflow: hidden;
+
+  // Efecto "shine" en las compras realizadas
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, $color_fondo_hover, transparent);
+    z-index: 1;
+    transition: transform 1s ease;
+    transform: translateX(-100%);
+  }
+
+    &:hover::before {
+      transform: translateX(100%);
+    }
+
+  @include mixinTools.PhoneAndTablet {
+    flex-direction: column;
+  }
+}
+
+.totalProductos {
+  display: flex;
+}
+
+// Estilo para los productos dentro de la card de la compra realizada
+.producto {
+  margin-right: 20px;
+
+  @include mixinTools.PhoneAndTablet {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    margin: 0 auto;
+
+    @include mixinTools.PhoneAndTablet {
+      width: 100px;
+    }
+  }
+}
+
+.detallesCompra {
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 10%;
+  background-color: $color_fondo_hover;
+  padding: 10px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+
+  @include mixinTools.DesktopOnly {
+    margin-left: auto;
+  }
+
+  @include mixinTools.PhoneAndTablet {
+    font-size: 0.8em;
+  }
+}

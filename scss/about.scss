@@ -1,0 +1,57 @@
+@use "globals.scss" as *;
+@use "mixin.scss" as mixinTools;
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.equipoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#equipo > h2 {
+  text-align: center;
+}
+
+$miembros: hombre1 mujer1 hombre2 mujer2;
+
+@each $miembro in $miembros {
+  .miembro-#{$miembro} {
+    max-width: 250px;
+    text-align: justify;
+    margin: 0 0.5em;
+
+    h4, h5 {
+      margin: 0.6em;
+      text-align: center;
+    }
+
+    .imagenMiembro {
+      width: 100%;
+      height: 150px;
+      border-radius: 10%;
+      border: 1px solid black;
+      transform: scale(1);
+      background: url("../../media/img/miembros/#{$miembro}.jpg") no-repeat center center;
+      background-size: cover;
+
+      &:hover {
+        animation: scale 0.4s forwards;
+      }
+    }
+  }
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

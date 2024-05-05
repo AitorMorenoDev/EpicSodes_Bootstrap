@@ -1,0 +1,85 @@
+@use "globals.scss" as *;
+@use "mixin.scss" as mixinTools;
+
+// Main
+//region
+.contenidoPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a[href*="novedades"] {
+  color: $color_texto;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-align: center;
+
+    &:hover {
+      @include mixinTools.SetBackgroundAndTextColor($color_texto_hover, $color_fondo_hover);
+      @include mixinTools.SetTransition(all 1s ease-in-out);
+    }
+}
+
+#mainIndex {
+  margin: 0 2rem 0 2rem;
+
+  img {
+    border-radius: 2em;
+    margin: 0 1em;
+    cursor: crosshair;
+  }
+}
+
+// Slider
+
+.slider-container {
+  display: flex;
+  width: 65%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+  margin: auto;
+
+  .slider-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    @include mixinTools.SetTransition(opacity 1.2s ease-out);
+  }
+
+  .slider-target {
+    opacity: 1;
+  }
+}
+
+// Slider navigation
+.menu{
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+
+    a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $color_fondo_hover2;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+
+//endregion
+

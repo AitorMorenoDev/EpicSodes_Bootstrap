@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../../scss/screen.scss">
-    <link rel="stylesheet" href="../../../scss/contenido.scss">
     <link rel="stylesheet" href="../../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -127,75 +126,64 @@
         </nav>
     </div>
 
-    <!-- Main -->
-    <div class="contenidoPrincipal">
-
-        <!-- Contenido de la página -->
-        <main class="mainContent">
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/thriller/bajocero.jpg" alt="Bajo cero">
-                <figcaption>
-                    <h2>Bajo cero</h2>
-                    <p>En una fría noche cerrada de invierno, en mitad de una carretera despoblada, un furgón policial blindado es asaltado durante un traslado de presos.
-                        Alguien busca a alguien de su interior. Martín, el policía conductor del furgón, consigue atrincherarse dentro del cubículo blindado con los reclusos.
-                        Obligado a entenderse con sus enemigos naturales, Martín tratará de sobrevivir y cumplir con su deber en una larga noche de pesadilla
-                        en el que se pondrán a prueba incluso sus principios. </p>
-                    <p>Precio: 6.50€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+    <!-- Contenido de la página -->
+    <main id="mainContenido" class="container mt-4 mb-4">
+        <h2 class="text-center">Películas - Thriller</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-4">
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/thriller/bajocero.jpg" class="img-fluid rounded-2 mb-3" alt="Bajo cero">
+                <h4 class="card-title text-center mb-2">Bajo cero</h4>
+                <p class="card-text">En una fría noche cerrada de invierno, en mitad de una carretera despoblada, un furgón policial blindado es asaltado durante un traslado de presos.
+                    Alguien busca a alguien de su interior. Martín, el policía conductor del furgón, consigue atrincherarse dentro del cubículo blindado con los reclusos.
+                    Obligado a entenderse con sus enemigos naturales, Martín tratará de sobrevivir y cumplir con su deber en una larga noche de pesadilla
+                    en el que se pondrán a prueba incluso sus principios.</p>
+                <p class="card-text text-end">Precio: 6.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
+            </div>
 
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/thriller/nosotros.jpg" alt="Nosotros">
-                <figcaption>
-                    <h2>Nosotros</h2>
-                    <p>Adelaide Wilson es una mujer que vuelve al hogar de su infancia en la costa junto a su marido, Gabe, y sus dos hijos, para una idílica escapada veraniega.
-                        Después de un tenso día en la playa con sus amigos, Adelaide y su familia vuelven a la casa donde están pasando las vacaciones.
-                        Cuando cae la noche, los Wilson descubren la silueta de cuatro figuras cogidas de la mano en la entrada de la casa. </p>
-                    <p>Precio: 8.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/thriller/nosotros.jpg" class="img-fluid rounded-2 mb-3" alt="Nosotros">
+                <h4 class="card-title text-center mb-2">Nosotros</h4>
+                <p class="card-text">Adelaide Wilson es una mujer que vuelve al hogar de su infancia en la costa junto a su marido, Gabe, y sus dos hijos, para una idílica escapada veraniega.
+                    Después de un tenso día en la playa con sus amigos, Adelaide y su familia vuelven a la casa donde están pasando las vacaciones. Cuando cae la noche,
+                    los Wilson descubren la silueta de cuatro figuras cogidas de la mano y en pie delante de la vivienda.</p>
+                <p class="card-text text-end">Precio: 3.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
+            </div>
 
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/thriller/maquinista.jpg" alt="El maquinista">
-                <figcaption>
-                    <h2>El maquinista</h2>
-                    <p>Trevor Reznik, un empleado de una fábrica, padece desde hace un año un grave problema de insomnio, un mal que él oculta y que le provoca terribles alucinaciones.
-                        Debido a la fatiga se ha deteriorado tanto su salud física como su salud mental. Repelidos por su aspecto físico, sus compañeros de trabajo primero le evitan,
-                        y después se volverán contra él cuando uno de ellos pierde un brazo en un accidente en el que Trevor se ve involucrado.</p>
-                    <p>Precio: 6.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/thriller/maquinista.jpg" class="img-fluid rounded-2 mb-3" alt="El maquinista">
+                <h4 class="card-title text-center mb-2">El maquinista</h4>
+                <p class="card-text">Trevor Reznik, un empleado de una fábrica, padece desde hace un año un grave problema de insomnio, un mal que él oculta y que le provoca terribles alucinaciones.
+                    Debido a la fatiga se ha deteriorado tanto su salud física como su salud mental. Repelidos por su aspecto físico, sus compañeros de trabajo primero le evitan,
+                    y después se volverán contra él cuando uno de ellos pierde un brazo en un accidente en el que Trevor se ve involucrado.</p>
+                <p class="card-text text-end">Precio: 6.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
                 </div>
-            </figure>
+            </div>
 
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/thriller/renglones.jpg" alt="Los renglones torcidos de Dios">
-                <figcaption>
-                    <h2>Los renglones torcidos de Dios</h2>
-                    <p>Alice, investigadora privada, ingresa en un hospital psiquiátrico simulando una paranoia. Su objetivo es recabar pruebas del caso en el que trabaja:
-                        la muerte de un interno en circunstancias poco claras. Sin embargo, la realidad a la que se enfrentará en su encierro superará sus expectativas y pondrá en
-                        duda su propia cordura. Un mundo desconocido y apasionante se mostrará ante sus ojos. </p>
-                    <p>Precio: 5.50€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/thriller/renglones.jpg" class="img-fluid rounded-2 mb-3" alt="Los renglones torcidos de Dios">
+                <h4 class="card-title text-center mb-2">Los renglones torcidos de Dios</h4>
+                <p class="card-text">Alice, investigadora privada, ingresa en un hospital psiquiátrico simulando una paranoia. Su objetivo es recabar pruebas del caso en el que trabaja:
+                    la muerte de un interno en circunstancias poco claras. Sin embargo, la realidad a la que se enfrentará en su encierro superará sus expectativas y pondrá en
+                    duda su propia cordura. Un mundo desconocido y apasionante se mostrará ante sus ojos.</p>
+                <p class="card-text text-end">Precio: 5.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
-
-        </main>
-
-    </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">

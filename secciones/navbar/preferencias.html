@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../scss/screen.scss">
-    <link rel="stylesheet" href="../../scss/preferencias.scss">
     <link rel="stylesheet" href="../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -140,74 +139,109 @@
         </nav>
     </div>
 
-    <!-- Main -->
-    <div class="contenidoPrincipal">
-
-        <!-- Contenido de la página -->
-        <main class="mainPreferencias">
-            <form action="#" class="formPreferencias">
-                <h2>Preferencias del Usuario</h2>
-                <div class="preferencia">
-                    <h4>Género favorito de películas:</h4>
-                    <label><input type="checkbox" name="genero_peliculas" value="accion"> Acción</label><br>
-                    <label><input type="checkbox" name="genero_peliculas" value="ciencia_ficcion"> Ciencia Ficción</label><br>
-                    <label><input type="checkbox" name="genero_peliculas" value="comedia"> Comedia</label><br>
-                    <label><input type="checkbox" name="genero_peliculas" value="thriller"> Thriller</label><br>
+    <!-- Contenido de la página -->
+    <main class="container mt-4 mb-4">
+        <h2 class="mb-3">Preferencias del Usuario</h2>
+        <form action="#" class="card p-4 rounded-5 shadow">
+            <div class="mb-3">
+                <h6 class="fw-bold">Género favorito de películas:</h6>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="accion" id="accion">
+                    <label class="form-check-label fst-italic" for="accion">Acción</label>
                 </div>
 
-                <div class="preferencia">
-                    <h4>Plataformas de streaming favoritas:</h4>
-                    <label><input type="checkbox" name="streaming" value="netflix"> Netflix</label><br>
-                    <label><input type="checkbox" name="streaming" value="hbo"> HBO</label><br>
-                    <label><input type="checkbox" name="streaming" value="amazon_prime"> Amazon Prime</label><br>
-                    <label><input type="checkbox" name="streaming" value="disney_plus"> Disney+</label><br>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="cienciaficcion" id="cienciaficcion">
+                    <label class="form-check-label fst-italic" for="cienciaficcion">Ciencia Ficción</label>
                 </div>
 
-                <div class="preferencia">
-                    <h4>Número de productos por página:</h4>
-                    <select name="productos_por_pagina">
-                        <option value="" selected disabled>Seleccione una cantidad</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="ilimitado">Ilimitado</option>
-                    </select>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="comedia" id="comedia">
+                    <label class="form-check-label fst-italic" for="comedia">Comedia</label>
                 </div>
 
-                <!-- Selección de idioma -->
-                <div class="preferencia">
-                    <h4>Idioma preferido:</h4>
-                    <select name="idioma">
-                        <option value="" selected disabled>Seleccione un idioma</option>
-                        <option value="es">Español</option>
-                        <option value="en">Inglés</option>
-                        <option value="fr">Francés</option>
-                        <option value="de">Alemán</option>
-                    </select>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="thriller" id="thriller">
+                    <label class="form-check-label fst-italic" for="thriller">Thrilles</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">Plataformas de streaming favoritas:</h6>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="netflix" id="netflix">
+                    <label class="form-check-label fst-italic" for="netflix">Netflix</label>
                 </div>
 
-                <div class="preferencia">
-                    <h4>¿Desea recibir comunicaciones por email?:</h4>
-                    <div class="radio-group">
-                        <label><input type="radio" name="recibir_correo" value="si"> Sí</label>
-                        <label><input type="radio" name="recibir_correo" value="no" checked> No</label>
-                    </div>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="hbo" id="hbo">
+                    <label class="form-check-label fst-italic" for="hbo">HBO</label>
                 </div>
 
-                <div class="preferencia">
-                    <h4>¿Desea recibir notificaciones de la página?:</h4>
-                    <div class="radio-group">
-                        <label><input type="radio" name="recibir_notificaciones" value="si"> Sí</label>
-                        <label><input type="radio" name="recibir_notificaciones" value="no" checked> No</label>
-                    </div>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="prime" id="prime">
+                    <label class="form-check-label fst-italic" for="prime">Amazon Prime</label>
                 </div>
 
-                <!-- Botón de enviar -->
-                <button type="submit" class="btn-preferencias">Guardar</button>
-            </form>
-        </main>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="checkbox" name="genero_peliculas" value="disney" id="disney">
+                    <label class="form-check-label fst-italic" for="disney">Disney+</label>
+                </div>
+            </div>
 
-    </div>
+            <div class="mb-3">
+                <h6 class="fw-bold">Número de productos por página:</h6>
+                <select name="productos_por_pagina" class="form-select bg-body-secondary fst-italic">
+                    <option value="" selected disabled>Seleccione una cantidad</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="ilimitado">Ilimitado</option>
+                </select>
+            </div>
+
+            <!-- Selección de idioma -->
+            <div class="mb-3">
+                <h6 class="fw-bold">Idioma preferido:</h6>
+                <select name="idioma" class="form-select bg-body-secondary fst-italic">
+                    <option value="" selected disabled>Seleccione un idioma</option>
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                    <option value="de">Alemán</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">¿Desea recibir comunicaciones por email?:</h6>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="radio" name="recibir_correo" value="si" id="recibir_correo_si">
+                    <label class="form-check-label fst-italic" for="recibir_correo_si">Sí</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="radio" name="recibir_correo" value="no" id="recibir_correo_no">
+                    <label class="form-check-label fst-italic" for="recibir_correo_no">No</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">¿Desea recibir notificaciones de la página?:</h6>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="radio" name="recibir_notificaciones" value="si" id="recibir_notificaciones_si">
+                    <label class="form-check-label fst-italic" for="recibir_notificaciones_si">Sí</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input bg-body-secondary" type="radio" name="recibir_notificaciones" value="no" id="recibir_notificaciones_no">
+                    <label class="form-check-label fst-italic" for="recibir_notificaciones_no">No</label>
+                </div>
+            </div>
+
+            <!-- Botón de enviar -->
+            <div class="mb-3">
+                <button type="submit" class="btn btn-success">Guardar</button>
+            </div>
+        </form>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">

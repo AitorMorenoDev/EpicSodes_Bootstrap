@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../scss/screen.scss">
-    <link rel="stylesheet" href="../../scss/contenido.scss">
     <link rel="stylesheet" href="../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -140,86 +139,97 @@
         </nav>
     </div>
 
-    <!-- Main -->
-    <div class="contenidoPrincipal">
-
-        <!-- Contenido de la página -->
-        <main class="mainNews">
-            <figure class="newsCard">
-                <video src="../../media/video/oppenheimer.mp4" controls></video>
-                <figcaption>
-                    <h2>Oppenheimer</h2>
-                    <p>En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer, al frente del 'Proyecto Manhattan',
-                        lidera los ensayos nucleares para construir la bomba atómica para su país. Impactado por su poder destructivo, Oppenheimer se
-                        cuestiona las consecuencias morales de su creación. Desde entonces y el resto de su vida, se opondría firmemente al uso de armas nucleares.</p>
-                    <p>Precio: <strong>12.95€</strong></p>
-                    <label for="val1">Valoración: <u>9/10</u></label>
-                    <meter id="val1" min="0" max="100" low="45" high="60" optimum="80" value="90"></meter>
-                </figcaption>
-                <div class="newsFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+    <!-- Contenido de la página -->
+    <main class="container mt-4 mb-4">
+        <h2 class="text-center">Novedades</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="card rounded-4 shadow bg-body-secondary mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="rounded-5 p-3" src="https://www.youtube.com/embed/JpUd4BS7yI0?si=5RQuVmi-8boqzoG1" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Oppenheimer</h2>
+                        <p class="card-text">En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer, al frente del 'Proyecto Manhattan',
+                            lidera los ensayos nucleares para construir la bomba atómica para su país. Impactado por su poder destructivo, Oppenheimer se
+                            cuestiona las consecuencias morales de su creación. Desde entonces y el resto de su vida, se opondría firmemente al uso de armas nucleares.</p>
+                        <p class="card-text text-end"><small class="text-muted">Precio: <strong>12.95€</strong></small></p>
+                        <div class="d-flex justify-content-center">
+                            <label for="val1" class="me-2">Valoración: <u>9/10</u></label>
+                            <meter id="val1" min="0" max="100" low="45" high="60" optimum="80" value="90"></meter>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                    </div>
                 </div>
-            </figure>
 
-            <figure class="newsCard">
-                <iframe src="https://www.youtube.com/embed/l9tP4M8URhQ?si=Cy3uBrlqdy85SeUX"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <figcaption>
-                    <h2>La sociedad de la nieve</h2>
-                    <p>En 1972, el vuelo 571 de la Fuerza Aérea Uruguaya, fletado para llevar a un equipo de rugby a Chile, se estrella en un glaciar en el corazón de los Andes.
-                        Solo 29 de sus 45 pasajeros sobreviven al accidente. Atrapados en uno de los entornos más inaccesibles y hostiles del planeta, se ven obligados
-                        a recurrir a medidas extremas para mantenerse con vida.</p>
-                    <p>Precio: <strong>10.25€</strong></p>
-                    <label for="val2">Valoración: <u>6/10</u></label>
-                    <meter id="val2" min="0" max="100" low="45" high="60" optimum="80" value="60"></meter>
-                </figcaption>
-                <div class="newsFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                <div class="card rounded-4 shadow bg-body-secondary mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="rounded-5 p-3" src="https://www.youtube.com/embed/l9tP4M8URhQ?si=Cy3uBrlqdy85SeUX" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">La sociedad de la nieve</h2>
+                        <p class="card-text">En 1972, el vuelo 571 de la Fuerza Aérea Uruguaya, fletado para llevar a un equipo de rugby a Chile, se estrella en un glaciar en el corazón de los Andes.
+                            Solo 29 de sus 45 pasajeros sobreviven al accidente. Atrapados en uno de los entornos más inaccesibles y hostiles del planeta, se ven obligados
+                            a recurrir a medidas extremas para mantenerse con vida.</p>
+                        <p class="card-text text-end"><small class="text-muted">Precio: <strong>10.25€</strong></small></p>
+                        <div class="d-flex justify-content-center">
+                            <label for="val2" class="me-2">Valoración: <u>6/10</u></label>
+                            <meter id="val2" min="0" max="100" low="45" high="60" optimum="80" value="60"></meter>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                    </div>
                 </div>
-            </figure>
 
-            <figure class="newsCard">
-                <iframe src="https://www.youtube.com/embed/WNfF_WA5kWY?si=c631WsYRKra1iiTB"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <figcaption>
-                    <h2>Pobres criaturas</h2>
-                    <p>Bella Baxter es una joven revivida por el brillante y poco ortodoxo científico Dr. Godwin Baxter. Bajo la protección de Baxter, Bella está ansiosa por aprender.
-                        Hambrienta de la mundanidad que le falta, Bella se escapa con Duncan Wedderburn, un sofisticado y perverso abogado, en una aventura vertiginosa a través de los
-                        continentes. Libre de los prejuicios de su época, Bella se vuelve firme en su propósito de defender la igualdad y la liberación. </p>
-                    <p>Precio: <strong>9.95€</strong></p>
-                    <label for="val3">Valoración: <u>7.5/10</u></label>
-                    <meter id="val3" min="0" max="100" low="45" high="60" optimum="80" value="75"></meter>
-                </figcaption>
-                <div class="newsFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                <div class="card rounded-4 shadow bg-body-secondary mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="rounded-5 p-3" src="https://www.youtube.com/embed/WNfF_WA5kWY?si=c631WsYRKra1iiTB" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Pobres criaturas</h2>
+                        <p class="card-text">Bella Baxter es una joven revivida por el brillante y poco ortodoxo científico Dr. Godwin Baxter. Bajo la protección de Baxter, Bella está ansiosa por aprender.
+                            Hambrienta de la mundanidad que le falta, Bella se escapa con Duncan Wedderburn, un sofisticado y perverso abogado, en una aventura vertiginosa a través de los
+                            continentes. Libre de los prejuicios de su época, Bella se vuelve firme en su propósito de defender la igualdad y la liberación.</p>
+                        <p class="card-text text-end"><small class="text-muted">Precio: <strong>9.95€</strong></small></p>
+                        <div class="d-flex justify-content-center">
+                            <label for="val3" class="me-2">Valoración: <u>7.5/10</u></label>
+                            <meter id="val3" min="0" max="100" low="45" high="60" optimum="80" value="75"></meter>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                    </div>
                 </div>
-            </figure>
 
-            <figure class="newsCard">
-                <iframe src="https://www.youtube.com/embed/HyyWd2XI1EE?si=m75sksZSwqxcurRt"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <figcaption>
-                    <h2>Los asesinos de la luna</h2>
-                    <p>Ambientada en la Oklahoma de la década de 1920, narra los asesinatos en serie de los miembros de la nación indígena Osage, que era muy rica en petróleo;
-                        una serie de crímenes brutales que más tarde se conocería como el "Reinado del Terror". </p>
-                    <p>Precio: <strong>12.50€</strong></p>
-                    <label for="val4">Valoración: <u>4/10</u></label>
-                    <meter id="val4" min="0" max="100" low="45" high="60" optimum="80" value="40"></meter>
-                </figcaption>
-                <div class="newsFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                <div class="card rounded-4 shadow bg-body-secondary mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="rounded-5 p-3" src="https://www.youtube.com/embed/HyyWd2XI1EE?si=m75sksZSwqxcurRt" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Los asesinos de la luna</h2>
+                        <p class="card-text">Ambientada en la Oklahoma de la década de 1920, narra los asesinatos en serie de los miembros de la nación indígena Osage, que era muy rica en petróleo;
+                            una serie de crímenes brutales que más tarde se conocería como el "Reinado del Terror".</p>
+                        <p class="card-text text-end"><small class="text-muted">Precio: <strong>12.50€</strong></small></p>
+                        <div class="d-flex justify-content-center">
+                            <label for="val4" class="me-2">Valoración: <u>4/10</u></label>
+                            <meter id="val4" min="0" max="100" low="45" high="60" optimum="90" value="40"></meter>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                    </div>
                 </div>
-            </figure>
-        </main>
 
-    </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">

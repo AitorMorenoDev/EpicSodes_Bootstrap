@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../../scss/screen.scss">
-    <link rel="stylesheet" href="../../../scss/contenido.scss">
     <link rel="stylesheet" href="../../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -127,67 +126,61 @@
         </nav>
     </div>
 
-    <!-- Main -->
-    <div class="contenidoPrincipal">
+    <!-- Contenido de la página -->
+    <main id="mainContenido" class="container mt-4 mb-4">
+        <h2 class="text-center">Series - HBO</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-4">
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/hbo/tlou.jpg" class="img-fluid rounded-2 mb-3" alt="The last of us">
+                <h4 class="card-title text-center mb-2">The last of us</h4>
+                <p class="card-text">Veinte años después de la destrucción de la civilización moderna a causa de un hongo -el cordyceps- que se adueña del cuerpo de los humanos, uno de los supervivientes,
+                    Joel, recibe el encargo de sacar a la joven Ellie de una opresiva zona de cuarentena. Juntos cruzan Estados Unidos ayudándose mutuamente para intentar sobrevivir.</p>
+                <p class="card-text text-end">Precio: 9.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
+                </div>
+            </div>
 
-        <!-- Contenido de la página -->
-        <main class="mainContent">
-            <figure class="productCard">
-                <img src="../../../media/img/series/hbo/tlou.jpg" alt="The last of us">
-                <figcaption>
-                    <h2>The last of us</h2>
-                    <p>Veinte años después de la destrucción de la civilización moderna a causa de un hongo -el cordyceps- que se adueña del cuerpo de los humanos, uno de los supervivientes,
-                        Joel, recibe el encargo de sacar a la joven Ellie de una opresiva zona de cuarentena. Juntos cruzan Estados Unidos ayudándose mutuamente para intentar sobrevivir.</p>
-                    <p>Precio: 9.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/hbo/wire.jpg" class="img-fluid rounded-2 mb-3" alt="The wire">
+                <h4 class="card-title text-center mb-2">The wire</h4>
+                <p class="card-text">En los barrios bajos de Baltimore, se investiga un asesinato relacionado con el mundo de las drogas. Un policía es el encargado de detener a los miembros de un importante cártel.
+                    La corrupción policial, las frágiles lealtades dentro de los cárteles y la miseria vinculada al narcotráfico son algunos de los problemas denunciados en esta serie.</p>
+                <p class="card-text text-end">Precio: 9.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
                 </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/series/hbo/wire.jpg" alt="The wire">
-                <figcaption>
-                    <h2>The wire</h2>
-                    <p>En los barrios bajos de Baltimore, se investiga un asesinato relacionado con el mundo de las drogas. Un policía es el encargado de detener a los miembros de un importante cártel.
-                        La corrupción policial, las frágiles lealtades dentro de los cárteles y la miseria vinculada al narcotráfico son algunos de los problemas denunciados en esta serie.</p>
-                    <p>Precio: 9.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+            </div>
+
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/hbo/got.jpg" class="img-fluid rounded-2 mb-3" alt="Juego de tronos">
+                <h4 class="card-title text-center mb-2">Juego de tronos</h4>
+                <p class="card-text">Tras un largo verano de varios años, el temible invierno se acerca a los Siete Reinos. Lord Eddard 'Ned' Stark, señor de Invernalia,
+                    deja sus dominios para ir a la corte de su amigo, el rey Robert Baratheon, en Desembarco del Rey, la capital de los Siete Reinos.
+                    Stark se convierte en la Mano del Rey e intenta desentrañar una maraña de intrigas que pondrá en peligro su vida y la de todos los suyos.
+                    Mientras tanto, diversas facciones conspiran con un solo objetivo: apoderarse del trono.</p>
+                <p class="card-text text-end">Precio: 7.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
                 </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/series/hbo/got.jpg" alt="Juego de tronos">
-                <figcaption>
-                    <h2>Juego de tronos</h2>
-                    <p>Tras un largo verano de varios años, el temible invierno se acerca a los Siete Reinos. Lord Eddard 'Ned' Stark, señor de Invernalia,
-                        deja sus dominios para ir a la corte de su amigo, el rey Robert Baratheon, en Desembarco del Rey, la capital de los Siete Reinos.
-                        Stark se convierte en la Mano del Rey e intenta desentrañar una maraña de intrigas que pondrá en peligro su vida y la de todos los suyos.
-                        Mientras tanto, diversas facciones conspiran con un solo objetivo: apoderarse del trono.</p>
-                    <p>Precio: 7.50€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+            </div>
+
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/hbo/soprano.jpg" class="img-fluid rounded-2 mb-3" alt="Los Soprano">
+                <h4 class="card-title text-center mb-2">Los Soprano</h4>
+                <p class="card-text">Crónica de la vida cotidiana y de las aventuras personales y profesionales de una familia mafiosa que vive en Nueva Jersey. Son gentes sencillas,
+                    pero implacables en sus ritos y tradiciones. La trama se basa en las confidencias del "capo" Tony Soprano a su psicoanalista, la doctora Melfi.</p>
+                <p class="card-text text-end">Precio: 4.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
                 </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/series/hbo/soprano.jpg" alt="Los Soprano">
-                <figcaption>
-                    <h2>Los Soprano</h2>
-                    <p>Crónica de la vida cotidiana y de las aventuras personales y profesionales de una familia mafiosa que vive en Nueva Jersey. Son gentes sencillas,
-                        pero implacables en sus ritos y tradiciones. La trama se basa en las confidencias del "capo" Tony Soprano a su psicoanalista, la doctora Melfi.</p>
-                    <p>Precio: 4.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
-                </div>
-            </figure>
-        </main>
-    </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">

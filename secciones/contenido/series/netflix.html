@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../../scss/screen.scss">
-    <link rel="stylesheet" href="../../../scss/contenido.scss">
     <link rel="stylesheet" href="../../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -127,69 +126,62 @@
         </nav>
     </div>
 
-    <!-- Main -->
-    <div class="contenidoPrincipal">
+    <!-- Contenido de la página -->
+    <main id="mainContenido" class="container mt-4 mb-4">
+        <h2 class="text-center">Series - Netflix</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-4">
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/netflix/breaking.jpg" class="img-fluid rounded-2 mb-3" alt="Breaking bad">
+                <h4 class="card-title text-center mb-2">Breaking bad</h4>
+                <p class="card-text">Tras cumplir 50 años, Walter White, un profesor de química de un instituto de Albuquerque, Nuevo México, se entera de que tiene un cáncer de pulmón incurable.
+                    Casado con Skyler y con un hijo discapacitado, la brutal noticia lo impulsa a dar un drástico cambio a su vida: decide, con la ayuda de un antiguo alumno,
+                    fabricar anfetaminas y ponerlas a la venta. Lo que pretende es liberar a su familia de problemas económicos cuando se produzca el fatal desenlace.</p>
+                <p class="card-text text-end">Precio: 6.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
+                </div>
+            </div>
 
-        <!-- Contenido de la página -->
-        <main class="mainContent">
-            <figure class="productCard">
-                <img src="../../../media/img/series/netflix/breaking.jpg" alt="Breaking bad">
-                <figcaption>
-                    <h2>Breaking bad</h2>
-                    <p>Tras cumplir 50 años, Walter White, un profesor de química de un instituto de Albuquerque, Nuevo México, se entera de que tiene un cáncer de pulmón incurable.
-                        Casado con Skyler y con un hijo discapacitado, la brutal noticia lo impulsa a dar un drástico cambio a su vida: decide, con la ayuda de un antiguo alumno,
-                        fabricar anfetaminas y ponerlas a la venta. Lo que pretende es liberar a su familia de problemas económicos cuando se produzca el fatal desenlace. </p>
-                    <p>Precio: 6.50€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/netflix/casa.jpg" class="img-fluid rounded-2 mb-3" alt="La casa de papel">
+                <h4 class="card-title text-center mb-2">La casa de papel</h4>
+                <p class="card-text">Un misterioso personaje, que se hace llamar "El Profesor", planea el mayor de los atracos jamás ideado. Para llevar a cabo el ambicioso plan,
+                    recluta a una banda formada por personas con ciertas cualidades y algo en común: no tienen nada que perder. El objetivo es atracar la Fábrica Nacional de Moneda y Timbre,
+                    con la intención de quedarse encerrados dentro con una misión muy concreta: no robar dinero, sino crearlo.</p>
+                <p class="card-text text-end">Precio: 6.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/series/netflix/casa.jpg" alt="La casa de papel">
-                <figcaption>
-                    <h2>La casa de papel</h2>
-                    <p>Un misterioso personaje, que se hace llamar "El Profesor", planea el mayor de los atracos jamás ideado. Para llevar a cabo el ambicioso plan,
-                        recluta a una banda formada por personas con ciertas cualidades y algo en común: no tienen nada que perder. El objetivo es atracar la Fábrica Nacional de Moneda y Timbre,
-                        con la intención de quedarse encerrados dentro con una misión muy concreta: no robar dinero, sino crearlo.</p>
-                    <p>Precio: 6.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
-                </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/series/netflix/dark.jpg" alt="Dark">
-                <figcaption>
-                    <h2>Dark</h2>
-                    <p>Tras la desaparición de un joven, cuatro familias desesperadas tratan de entender lo ocurrido a medida que van desvelando un retorcido misterio
-                        que abarca tres décadas. Saga familiar con un giro sobrenatural, "Dark" se sitúa en un pueblo alemán, donde dos misteriosas desapariciones dejan
-                        al descubierto las dobles vidas y las relaciones resquebrajadas entre estas cuatro familias.</p>
-                    <p>Precio: 4.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
-                </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/series/netflix/blackmirror.jpg" alt="Black mirror">
-                <figcaption>
-                    <h2>Black mirror</h2>
-                    <p>Serie antológica creada por Charlie Brooker que muestra el lado oscuro de la tecnología y cómo esta afecta
-                        y puede alterar nuestra vida, a veces con consecuencias tan impredecibles como aterradoras.</p>
-                    <p>Precio: 5.50€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
-                </div>
-            </figure>
-        </main>
+            </div>
 
-    </div>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/netflix/dark.jpg" class="img-fluid rounded-2 mb-3" alt="Dark">
+                <h4 class="card-title text-center mb-2">Dark</h4>
+                <p class="card-text">Tras la desaparición de un joven, cuatro familias desesperadas tratan de entender lo ocurrido a medida que van desvelando un retorcido misterio
+                    que abarca tres décadas. Saga familiar con un giro sobrenatural, "Dark" se sitúa en un pueblo alemán, donde dos misteriosas desapariciones dejan
+                    al descubierto las dobles vidas y las relaciones resquebrajadas entre estas cuatro familias.</p>
+                <p class="card-text text-end">Precio: 4.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/series/netflix/blackmirror.jpg" class="img-fluid rounded-2 mb-3" alt="Black mirror">
+                <h4 class="card-title text-center mb-2">Black mirror</h4>
+                <p class="card-text">Serie antológica creada por Charlie Brooker que muestra el lado oscuro de la tecnología y cómo esta afecta
+                    y puede alterar nuestra vida, a veces con consecuencias tan impredecibles como aterradoras.</p>
+                <p class="card-text text-end">Precio: 5.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">

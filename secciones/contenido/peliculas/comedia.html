@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../../scss/screen.scss">
-    <link rel="stylesheet" href="../../../scss/contenido.scss">
     <link rel="stylesheet" href="../../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -127,73 +126,63 @@
         </nav>
     </div>
 
-    <!-- Main -->
-    <div class="contenidoPrincipal">
-
-        <!-- Contenido de la página -->
-        <main class="mainContent">
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/comedia/vidabrian.jpg" alt="La vida de Brian">
-                <figcaption>
-                    <h2>La vida de Brian</h2>
-                    <p>Brian nace en un pesebre de Belén el mismo día que Jesucristo. Un cúmulo de desgraciados y tronchantes equívocos le harán llevar una vida paralela
-                        a la del verdadero Hijo de Dios. Sus pocas luces y el ambiente de decadencia y caos absoluto en que se halla sumergida la Galilea de aquellos días,
-                        le harán vivir en manos de su madre, de una feminista revolucionaria y del mismísimo Poncio Pilatos, su propia versión del calvario.</p>
-                    <p>Precio: 12.50€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+    <!-- Contenido de la página -->
+    <main id="mainContenido" class="container mt-4 mb-4">
+        <h2 class="text-center">Películas - Comedia</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-4">
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/comedia/vidabrian.jpg" class="img-fluid rounded-2 mb-3" alt="La vida de Brian">
+                <h4 class="card-title text-center mb-2">La vida de Brian</h4>
+                <p class="card-text">Brian nace en un pesebre de Belén el mismo día que Jesucristo. Un cúmulo de desgraciados y tronchantes equívocos le harán llevar una vida paralela
+                    a la del verdadero Hijo de Dios. Sus pocas luces y el ambiente de decadencia y caos absoluto en que se halla sumergida la Galilea de aquellos días,
+                    le harán vivir en manos de su madre, de una feminista revolucionaria y del mismísimo Poncio Pilatos, su propia versión del calvario.</p>
+                <p class="card-text text-end">Precio: 12.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
+            </div>
 
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/comedia/lebowsky.jpg" alt="El gran Lebowski">
-                <figcaption>
-                    <h2>El gran Lebowski</h2>
-                    <p>El Nota, un vago que vive en Los Angeles, un día es confundido por un par de matones con el millonario Jeff Lebowski,
-                        con quien solo comparte apellido. Después de que orinen en su alfombra, el Nota inicia la búsqueda de El Gran Lebowski.
-                        De su encuentro surgirá un trato: el Nota recibirá una recompensa si consigue encontrar a la mujer del magnate.</p>
-                    <p>Precio: 4.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/comedia/lebowsky.jpg" class="img-fluid rounded-2 mb-3" alt="El gran Lebowski">
+                <h4 class="card-title text-center mb-2">El gran Lebowski</h4>
+                <p class="card-text">El Nota, un vago que vive en Los Angeles, un día es confundido por un par de matones con el millonario Jeff Lebowski,
+                    con quien solo comparte apellido. Después de que orinen en su alfombra, el Nota inicia la búsqueda de El Gran Lebowski.
+                    De su encuentro surgirá un trato: el Nota recibirá una recompensa si consigue encontrar a la mujer del magnate.</p>
+                <p class="card-text text-end">Precio: 4.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
+            </div>
 
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/comedia/aterriza.jpg" alt="Aterriza como puedas">
-                <figcaption>
-                    <h2>Aterriza como puedas</h2>
-                    <p>El vuelo 209 de la Trans American sale de Los Ángeles con destino a Chicago. Entre el pasaje se encuentran una serie de curiosos personajes.
-                        Entre ellos, un ex-piloto de combate que, en pleno vuelo, se verá obligado a hacerse con el mando del avión comercial,
-                        tras quedar los pilotos indispuestos por una comida en mal estado.</p>
-                    <p>Precio: 7.50€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/comedia/aterriza.jpg" class="img-fluid rounded-2 mb-3" alt="Aterriza como puedas">
+                <h4 class="card-title text-center mb-2">Aterriza como puedas</h4>
+                <p class="card-text">El vuelo 209 de la Trans American sale de Los Ángeles con destino a Chicago. Entre el pasaje se encuentran una serie de curiosos personajes.
+                    Entre ellos, un ex-piloto de combate que, en pleno vuelo, se verá obligado a hacerse con el mando del avión comercial,
+                    tras quedar los pilotos indispuestos por una comida en mal estado.</p>
+                <p class="card-text text-end">Precio: 7.50€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
+            </div>
 
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/comedia/tontos.jpg" alt="Dos tontos muy tontos">
-                <figcaption>
-                    <h2>Dos tontos muy tontos</h2>
-                    <p>La vida de Lloyd y Harry, dos amigos de una estupidez supina, es un auténtico desastre. El primero trabaja como chófer de una limusina,
-                        y el segundo se dedica a transportar perros. Cuando Lloyd se enamora de una chica de buena posición, que deja olvidado un maletín en el coche,
-                        los dos amigos emprenden un viaje por todo el país para devolvérselo.</p>
-                    <p>Precio: 4.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/comedia/tontos.jpg" class="img-fluid rounded-2 mb-3" alt="Dos tontos muy tontos">
+                <h4 class="card-title text-center mb-2">Dos tontos muy tontos</h4>
+                <p class="card-text">La vida de Lloyd y Harry, dos amigos de una estupidez supina, es un auténtico desastre. El primero trabaja como chófer de una limusina,
+                    y el segundo se dedica a transportar perros. Cuando Lloyd se enamora de una chica de buena posición, que deja olvidado un maletín en el coche,
+                    los dos amigos emprenden un viaje por todo el país para devolvérselo.</p>
+                <p class="card-text text-end">Precio: 4.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
-        </main>
-
-    </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">

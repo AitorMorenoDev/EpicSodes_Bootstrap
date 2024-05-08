@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../../scss/screen.scss">
-    <link rel="stylesheet" href="../../../scss/contenido.scss">
     <link rel="stylesheet" href="../../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -127,70 +126,63 @@
         </nav>
     </div>
 
-    <!-- Main -->
-    <div class="contenidoPrincipal">
+    <!-- Contenido de la página -->
+    <main id="mainContenido" class="container mt-4 mb-4">
+        <h2 class="text-center">Películas - Acción</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-4">
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/accion/cara.jpg" class="img-fluid rounded-2 mb-3" alt="Cara a cara">
+                <h4 class="card-title text-center mb-2">Cara a cara</h4>
+                <p class="card-text">Un peligroso terrorista a punto de morir y un agente especial del FBI ingresan en un quirófano para un trasplante de cara.
+                    Se trata de que el policía pueda infiltrarse en la banda para encontrar un arma biológica que el terrorista ha colocado en algún lugar de Los Ángeles.
+                    Pero el terrorista sale del coma y se escapa.</p>
+                <p class="card-text text-end">Precio: 7.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
+                </div>
+            </div>
 
-        <!-- Contenido de la página -->
-        <main class="mainContent">
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/accion/cara.jpg" alt="Cara a cara">
-                <figcaption>
-                    <h2>Cara a cara</h2>
-                    <p>Un peligroso terrorista a punto de morir y un agente especial del FBI ingresan en un quirófano para un trasplante de cara.
-                        Se trata de que el policía pueda infiltrarse en la banda para encontrar un arma biológica que el terrorista ha colocado en algún lugar de Los Ángeles.
-                        Pero el terrorista sale del coma y se escapa.</p>
-                    <p>Precio: 7.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/accion/crank.jpg" class="img-fluid rounded-2 mb-3" alt="Crank">
+                <h4 class="card-title text-center mb-2">Crank: Veneno en la sangre</h4>
+                <p class="card-text">Chev Chelios, un asesino a sueldo de Los Ángeles, ha sido envenenado mientras dormía y solo le queda una hora de vida.
+                    La única oportunidad que tiene Chev de sobrevivir es mantenerse en movimiento para impedir que el veneno le llegue al corazón.
+                    El tiempo pasa y corre enloquecido por las calles de Los Ángeles para salvar a su novia y encontrar un antídoto que le salve la vida.</p>
+                <p class="card-text text-end">Precio: 9.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
                 </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/accion/crank.jpg" alt="Crank">
-                <figcaption>
-                    <h2>Crank: Veneno en la sangre</h2>
-                    <p>Chev Chelios, un asesino a sueldo de Los Ángeles, ha sido envenenado mientras dormía y solo le queda una hora de vida.
-                        La única oportunidad que tiene Chev de sobrevivir es mantenerse en movimiento para impedir que el veneno le llegue al corazón.
-                        El tiempo pasa y corre enloquecido por las calles de Los Ángeles para salvar a su novia y encontrar un antídoto que le salve la vida.</p>
-                    <p>Precio: 9.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
-                </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/accion/mision.jpg" alt="Misión imposible">
-                <figcaption>
-                    <h2>Misión imposible</h2>
-                    <p>Ethan Hunt es un super espía capaz de llevar a cabo la misión más peligrosa con la máxima eficacia y elegancia.
-                        Forma parte de un competente equipo dirigido por el agente Jim Phelps, que ha vuelto a reunir a sus hombres para participar en una
-                        dificilísima misión: evitar la venta de un disco robado que contiene información secreta de vital importancia.</p>
-                    <p>Precio: 4.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav.png" alt="favorito"></button>
-                </div>
-            </figure>
-            <figure class="productCard">
-                <img src="../../../media/img/peliculas/accion/jungla.jpg" alt="Jungla de Cristal">
-                <figcaption>
-                    <h2>Jungla de cristal</h2>
-                    <p>En lo alto de la ciudad de Los Ángeles, un grupo terrorista se ha apoderado de un edificio tomando a un grupo de personas como rehenes.
-                        Solo un hombre, el policía de Nueva York John McClane, ha conseguido escapar del acoso terrorista. Aunque está solo y fuera de servicio,
-                        McClane se enfrentará a los secuestradores. Él es la única esperanza para los rehenes. </p>
-                    <p>Precio: 9.95€</p>
-                </figcaption>
-                <div class="productFooter">
-                    <button class="btn-comprar">Comprar</button>
-                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
-                </div>
-            </figure>
-        </main>
+            </div>
 
-    </div>
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/accion/jungla.jpg" class="img-fluid rounded-2 mb-3" alt="Jungla de cristal">
+                <h4 class="card-title text-center mb-2">Jungla de cristal</h4>
+                <p class="card-text">En lo alto de la ciudad de Los Ángeles, un grupo terrorista se ha apoderado de un edificio tomando a un grupo de personas como rehenes.
+                    Solo un hombre, el policía de Nueva York John McClane, ha conseguido escapar del acoso terrorista. Aunque está solo y fuera de servicio,
+                    McClane se enfrentará a los secuestradores. Él es la única esperanza para los rehenes.</p>
+                <p class="card-text text-end">Precio: 9.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav1.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="card col flex-fill p-3 shadow border border-secondary">
+                <img src="../../../media/img/peliculas/accion/mision.jpg" class="img-fluid rounded-2 mb-3" alt="Misión imposible">
+                <h4 class="card-title text-center mb-2">Misión imposible</h4>
+                <p class="card-text">Ethan Hunt es un super espía capaz de llevar a cabo la misión más peligrosa con la máxima eficacia y elegancia.
+                    Forma parte de un competente equipo dirigido por el agente Jim Phelps, que ha vuelto a reunir a sus hombres para participar en una
+                    dificilísima misión: evitar la venta de un disco robado que contiene información secreta de vital importancia.</p>
+                <p class="card-text text-end">Precio: 4.95€</p>
+                <div class="d-flex justify-content-center align-items-end mt-auto mb-0">
+                    <button class="btn btn-success">Comprar</button>
+                    <button class="btn-favoritos mb-2"><img src="../../../media/img/iconos/fav.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">

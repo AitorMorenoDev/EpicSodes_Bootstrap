@@ -1,10 +1,6 @@
-@use "mixin.scss" as mixinTools;
-@use "globals.scss" as *;
-
 // Común a todas las páginas
 //region
 main {
-  margin: 0 150px;
   text-align: justify;
 }
 
@@ -14,6 +10,11 @@ main {
   text-align: center;
   text-decoration: underline;
 }
+
+#barrabusq, #barrabusq2 {
+  border: 1px solid black;
+}
+
 //endregion
 
 // Index
@@ -27,16 +28,33 @@ main {
   }
 
   a[href*="novedades"]:not(.dropdown-item) {
-    color: $color_texto;
+    color: #333;
     text-decoration: none;
     font-size: 1.1em;
     text-align: center;
 
     &:hover {
-      @include mixinTools.SetBackgroundAndTextColor($color_texto_hover, $color_fondo_hover);
-      @include mixinTools.SetTransition(all 1s ease-in-out);
+      text-decoration: underline;
     }
   }
 }
 //endregion
 
+
+.btn-favoritos {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 10px;
+
+  img {
+    width: 25px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

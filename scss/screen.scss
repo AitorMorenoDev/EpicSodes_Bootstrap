@@ -1,405 +1,42 @@
 @use "mixin.scss" as mixinTools;
 @use "globals.scss" as *;
 
-// Animaciones
+// Común a todas las páginas
 //region
-@keyframes hoverAnimation {
-  from {
-    background-color: $color_fondo_hover;
-  }
-
-  to {
-    background-color: $color_fondo_hover2;
-  }
-}
-
-@keyframes scaleInMainScreen {
-  0% {
-    -webkit-transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.25);
-  }
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-//endregion
-
-body {
-  margin: 0;
-  padding: 0;
-  @include mixinTools.SetFont("Madimi One", 16px, 400, normal, none);
-  @include mixinTools.SetBackgroundAndTextColor($color_texto,$color_fondo);
-}
-
-// Main común a todas las páginas
 main {
   margin: 0 150px;
   text-align: justify;
-
-    @include mixinTools.PhoneAndTablet {
-        margin: 0 2em;
-    }
-
-  h4 {
-    text-decoration: underline;
-  }
 }
 
-// Header
-//region
-.navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1em 2em;
-
-  .navbarContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    @include mixinTools.SetFont("Madimi One", 2em, 400, italic, underline);
-
-    @include mixinTools.PhoneAndTablet {
-      p {
-        display: none;
-      }
-    }
-
-    img {
-      max-height: 3em;
-
-      &:hover {
-        @include mixinTools.SetAnimation(rotate 1s);
-      }
-    }
-  }
-
-  @include mixinTools.DesktopOnly {
-    #menuMovil {
-      display: none;
-    }
-  }
-
-  @include mixinTools.PhoneAndTablet {
-    .navbar {
-      #menuMovil {
-        display: block;
-        top: 0;
-        left: 0;
-        transition: height 0.3s ease;
-
-        &:hover {
-          background-color: $color_fondo_hover;
-        }
-      }
-    }
-  }
-
-  %buscador {
-    flex-grow: 1;
-    margin: 0 20px;
-    position: relative;
-    text-align: center;
-
-    input[type="text"] {
-      @include mixinTools.SetBackgroundAndTextColor($color_texto_hover, $color_fondo_hover);
-      width: 70%;
-      padding: 8px;
-      border: 1px solid $color_texto;
-      border-radius: 15px;
-    }
-
-    .buscarIcon {
-      cursor: pointer;
-      max-height: 25px;
-      position: relative;
-      top: 8px;
-      margin-left: -40px;
-    }
-  }
-
-  .buscadorEscritorio {
-    @extend %buscador;
-    @include mixinTools.DesktopOnly {
-      display: block;
-    }
-    @include mixinTools.PhoneAndTablet {
-      display: none;
-    }
-  }
-
-  .buscadorMovil {
-    @extend %buscador;
-    @include mixinTools.DesktopOnly {
-      display: none;
-    }
-    @include mixinTools.PhoneAndTablet {
-      display: block;
-      width: 100%;
-    }
-  }
-
-  .iconMenu {
-    cursor: pointer;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    position: relative;
-
-    img {
-      max-height: 30px;
-    }
-
-    &:hover {
-      background-color: $color_fondo_hover;
-    }
-  }
-
-  .submenuNavBar {
-    display: none;
-    position: absolute;
-    @include mixinTools.SetBackgroundAndTextColor($color_texto_hover,$color_fondo_hover);
-    z-index: 1;
-    border-radius: 15px;
-    text-align: center;
-    left: -70%;
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        align-items: center;
-        cursor: pointer;
-
-        &:is(.opcionMovil) {
-          display:flex;
-
-          &:hover{
-            background-color: $color_fondo_hover2;
-            @include mixinTools.SetAnimation(hoverAnimation 0.7s);
-            border-radius: 15px;
-          }
-        }
-
-        img {
-          max-height: 20px;
-          margin-left: 1em;
-        }
-
-        a {
-          display: block;
-          color: $color_texto_hover;
-          text-decoration: none;
-          padding: 20px;
-          border-radius: 15px;
-          text-align: center;
-
-          &:hover{
-            background-color: $color_fondo_hover2;
-            @include mixinTools.SetAnimation(hoverAnimation 0.7s);
-          }
-        }
-      }
-    }
-  }
-
-  .iconMenu:hover .submenuNavBar {
-    display: block;
-  }
-
-}
-//endregion
-
-// Menú lateral
-//region
-.menuLateral {
-  width: 100px;
-  padding: 20px;
-  position: fixed;
-  top: 200px;
-  left: 0;
-  z-index: 999;
-
-  @include mixinTools.PhoneAndTablet {
-    display: none;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 20px;
-
-    li {
-      padding: 10px;
-      text-align: center;
-      position: relative;
-      cursor: pointer;
-      border-radius: 20px;
-
-      &:hover, .category {
-        @include mixinTools.SetBackgroundAndTextColor($color_texto_hover,$color_fondo_hover2);
-      }
-
-      .category {
-        display: none;
-      }
-
-      &:hover .category {
-        display: block;
-      }
-
-      a {
-        text-decoration: none;
-        display: block;
-        padding: 10px;
-        border-radius: 15px;
-
-        img:hover, &:hover {
-          @include mixinTools.SetBackgroundAndTextColor($color_texto_hover,$color_fondo_hover2);
-        }
-
-        img {
-          max-height: 30px;
-        }
-      }
-    }
-  }
-
-  :hover {
-    @include mixinTools.SetBackgroundAndTextColor($color_texto_hover,$color_fondo_hover);
-  }
-
-  .submenuLateral {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100px;
-    width: 100px;
-    @include mixinTools.SetBackgroundAndTextColor($color_texto,$color_fondo_hover);
-    z-index: 1;
-    border-radius: 15px;
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        padding: 10px;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-
-        &:hover {
-          @include mixinTools.SetAnimation(hoverAnimation 0.7s ease-in);
-        }
-
-        a {
-          color: $color_texto;
-          text-decoration: none;
-          display: block;
-          padding: 10px;
-          border-radius: 15px;
-          background-color: transparent;
-        }
-      }
-    }
-  }
-
-  .subMenuTrigger:hover .submenuLateral {
-    display: block;
-  }
-}
-//endregion
-
-// Footer
-//region
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: $color_fondo_hover;
-  padding: 0 15px;
-  margin: 1.2em 1em;
+#nombreWeb {
+  font-size: 1.5em;
+  font-style: italic;
   text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 30px;
+  text-decoration: underline;
+}
+//endregion
 
-  #segundaColFooter {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 0.5em;
-
-    a {
-      align-self: center;
-    }
+// Index
+//region
+#mainIndex {
+  margin: 0 2rem 0 2rem;
+  img {
+    border-radius: 2em;
+    margin: 0;
+    cursor: crosshair;
   }
 
-  @include mixinTools.DesktopOnly {
-    p {
-      display: inline-block;
-    }
-  }
-
-  @include mixinTools.PhoneAndTablet {
-    #primeraColFooter {
-      margin-top: 0.5em;
-    }
-  }
-
-  a {
+  a[href*="novedades"]:not(.dropdown-item) {
     color: $color_texto;
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 1.1em;
+    text-align: center;
 
-    &:hover::after {
-      content: "➜";
-    }
-
-    &:active {
-      color: $color_link_active;
-    }
-  }
-
-  .rrss {
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
-    vertical-align: center;
-
-    img {
-      max-height: 30px;
-      &:hover {
-        @include mixinTools.SetAnimation(scaleInMainScreen 1s);
-      }
-    }
-
-    a::after {
-      content: "";
+    &:hover {
+      @include mixinTools.SetBackgroundAndTextColor($color_texto_hover, $color_fondo_hover);
+      @include mixinTools.SetTransition(all 1s ease-in-out);
     }
   }
 }
-
 //endregion
+

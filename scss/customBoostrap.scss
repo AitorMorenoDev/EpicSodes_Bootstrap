@@ -1,0 +1,25 @@
+$primary: #333;
+$secondary: lighten($primary, 30%);
+
+$body-bg: #FFE1D6;
+$body-secondary-bg: darken($body-bg, 5%);
+
+$body-color: #333;
+$body-secondary-color: #000;
+
+$link-hover-color: darken($primary, 5%);
+
+$fuente: Madimi One, serif;
+$font-family-base: $fuente;
+
+$input-border-radius: 10px;
+
+$dropdown-bg: darken($body-bg, 5%);
+$dropdown-link-color: lighten($body-color, 10%);
+$dropdown-link-hover-bg: darken($dropdown-bg, 5%);
+$dropdown-link-hover-color: $body-secondary-color;
+
+$btn-link-hover-color: $body-secondary-bg;
+$btn-border-radius: $input-border-radius;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

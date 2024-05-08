@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../scss/screen.scss">
+    <link rel="stylesheet" href="../../scss/contenido.scss">
+    <link rel="stylesheet" href="../../scss/customBoostrap.scss">
+    <link rel="stylesheet" href="../../scss/estiloBoostrap.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicSodes | Página principal</title>
+    <link rel="icon" href="../../media/img/logo.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <!--Navbar-->
+    <div class="row fila1">
+        <nav class="navbar navbar-expand-md navbar-light bg-body">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <img src="../../media/img/logo.png" alt="Logo" width="128" height="128">
+                <p id="nombreWeb" class="pt-3">EpicSodes</p>
+            </a>
+
+            <!-- Botón hamburguesa (de md hacia abajo) -->
+            <button class="navbar-toggler d-block d-md-none me-5" type="button" data-bs-toggle="collapse" data-bs-target="#desplegable"
+                    aria-controls="desplegable" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse ps-3 me-md-5" id="desplegable">
+                <!-- Barra de búsqueda desktop -->
+                <form class="form my-2 my-lg-0 w-75 d-md-flex flex-nowrap d-none">
+                    <input class="form-control mr-sm-2 bg-body-secondary me-2" type="search" aria-label="Buscar">
+                    <button class="btn btn-outline-secondary text-dark my-2 my-sm-0 me-2" type="submit">Buscar</button>
+                </form>
+
+                <!-- Menú de navegacion (contenido, home, perfil, carrito) -->
+                <ul id="menuNav" class="navbar-nav nav-pills flex-row">
+
+                    <!-- Contenido -->
+                    <li class="nav-item dropdown me-5 me-md-2 me-lg-4">
+                        <a class="nav-link dropdown-toggle" href="../../secciones/contenido/peliculas.html" role="button" id="dropdownContenido"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img src="../../media/img/iconos/films.png" alt="Contenido" width="30" height="30">
+                        </a>
+
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownContenido">
+
+                            <!-- Novedades -->
+                            <li><a class="dropdown-item" href="../../secciones/contenido/novedades.html">Novedades</a></li>
+
+                            <!-- Películas -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="../../secciones/contenido/peliculas.html">Películas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/peliculas/accion.html">Acción</a></li>
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/peliculas/cienciaficcion.html">Ciencia Ficción</a></li>
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/peliculas/comedia.html">Comedia</a></li>
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/peliculas/thriller.html">Thriller</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Series -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="../../secciones/contenido/series.html">Series</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/series/netflix.html">Netflix</a></li>
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/series/hbo.html">HBO</a></li>
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/series/amazonprime.html">Amazon Prime</a></li>
+                                    <li><a class="dropdown-item" href="../../secciones/contenido/series/disneyplus.html">Disney+</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Favoritos -->
+                            <li><a class="dropdown-item" href="../../secciones/contenido/favoritos.html">Favoritos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Home -->
+                    <li class="nav-item active me-5 me-md-2 me-lg-4">
+                        <a class="nav-link" href="../../index.html">
+                            <img src="../../media/img/iconos/home.png" width="30" height="30" alt="Home">
+                        </a>
+                    </li>
+
+                    <!-- Perfil -->
+                    <li class="nav-item active dropdown me-5 me-md-2 me-lg-4">
+                        <a class="text-primary nav-link dropdown-toggle" href="../../secciones/navbar/perfil.html" role="button" id="dropdownPerfil"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img src="../../media/img/iconos/profile.png" width="30" height="30" alt="Perfil">
+                        </a>
+
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownPerfil">
+                            <li><a class="dropdown-item" href="../../secciones/navbar/perfil.html">Perfil</a></li>
+                            <li><a class="dropdown-item" href="../../secciones/navbar/preferencias.html">Preferencias</a></li>
+                            <li><a class="dropdown-item" href="../../secciones/navbar/registro.html">Registro</a></li>
+                            <li><a class="dropdown-item" href="../../index.html">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Carrito -->
+                    <li class="nav-item active me-5 me-md-2 me-lg-4">
+                        <a class="nav-link" href="../../secciones/navbar/carrito.html">
+                            <img src="../../media/img/iconos/cart.png" width="30" height="30" alt="Carrito">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Barra de búsqueda -->
+                <form class="form my-2 my-lg-0 w-100 d-flex d-md-none flex-nowrap">
+                    <input class="form-control mr-sm-2 bg-body-secondary me-2 rounded-5" type="search" aria-label="Buscar">
+                    <button class="btn btn-outline-secondary text-dark my-2 my-sm-0 me-2" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <!-- Secciones de contenido (solo en móvil) -->
+            <div class="row" id="menuContenido">
+                <div class="btn-group d-md-none">
+                    <button class="btn btn-outline-secondary text-primary my-2 my-sm-0 me-0" type="submit">
+                        <a href="novedades.html"><img src="../../media/img/iconos/news.png" height="20" class="me-1 mb-1" alt="">Novedades</a></button>
+                    <button class="btn btn-outline-secondary text-primary my-2 my-sm-0 me-0" type="submit">
+                        <a href="peliculas.html"><img src="../../media/img/iconos/films.png" height="20" class="me-1 mb-1" alt="">Películas</a></button>
+                    <button class="btn btn-outline-secondary text-primary my-2 my-sm-0 me-0" type="submit">
+                        <a href="series.html"><img src="../../media/img/iconos/series.png" height="20" class="me-1 mb-1" alt="">Series</a></button>
+                    <button class="btn btn-outline-secondary text-primary my-2 my-sm-0 me-0" type="submit">
+                        <a href="favoritos.html"><img src="../../media/img/iconos/fav.png" height="20" class="me-1 mb-1" alt="">Favoritos</a></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main -->
+    <div class="contenidoPrincipal">
+
+        <!-- Contenido de la página -->
+        <main class="mainNews">
+            <figure class="newsCard">
+                <video src="../../media/video/oppenheimer.mp4" controls></video>
+                <figcaption>
+                    <h2>Oppenheimer</h2>
+                    <p>En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer, al frente del 'Proyecto Manhattan',
+                        lidera los ensayos nucleares para construir la bomba atómica para su país. Impactado por su poder destructivo, Oppenheimer se
+                        cuestiona las consecuencias morales de su creación. Desde entonces y el resto de su vida, se opondría firmemente al uso de armas nucleares.</p>
+                    <p>Precio: <strong>12.95€</strong></p>
+                    <label for="val1">Valoración: <u>9/10</u></label>
+                    <meter id="val1" min="0" max="100" low="45" high="60" optimum="80" value="90"></meter>
+                </figcaption>
+                <div class="newsFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                </div>
+            </figure>
+
+            <figure class="newsCard">
+                <iframe src="https://www.youtube.com/embed/l9tP4M8URhQ?si=Cy3uBrlqdy85SeUX"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>
+                    <h2>La sociedad de la nieve</h2>
+                    <p>En 1972, el vuelo 571 de la Fuerza Aérea Uruguaya, fletado para llevar a un equipo de rugby a Chile, se estrella en un glaciar en el corazón de los Andes.
+                        Solo 29 de sus 45 pasajeros sobreviven al accidente. Atrapados en uno de los entornos más inaccesibles y hostiles del planeta, se ven obligados
+                        a recurrir a medidas extremas para mantenerse con vida.</p>
+                    <p>Precio: <strong>10.25€</strong></p>
+                    <label for="val2">Valoración: <u>6/10</u></label>
+                    <meter id="val2" min="0" max="100" low="45" high="60" optimum="80" value="60"></meter>
+                </figcaption>
+                <div class="newsFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                </div>
+            </figure>
+
+            <figure class="newsCard">
+                <iframe src="https://www.youtube.com/embed/WNfF_WA5kWY?si=c631WsYRKra1iiTB"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>
+                    <h2>Pobres criaturas</h2>
+                    <p>Bella Baxter es una joven revivida por el brillante y poco ortodoxo científico Dr. Godwin Baxter. Bajo la protección de Baxter, Bella está ansiosa por aprender.
+                        Hambrienta de la mundanidad que le falta, Bella se escapa con Duncan Wedderburn, un sofisticado y perverso abogado, en una aventura vertiginosa a través de los
+                        continentes. Libre de los prejuicios de su época, Bella se vuelve firme en su propósito de defender la igualdad y la liberación. </p>
+                    <p>Precio: <strong>9.95€</strong></p>
+                    <label for="val3">Valoración: <u>7.5/10</u></label>
+                    <meter id="val3" min="0" max="100" low="45" high="60" optimum="80" value="75"></meter>
+                </figcaption>
+                <div class="newsFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                </div>
+            </figure>
+
+            <figure class="newsCard">
+                <iframe src="https://www.youtube.com/embed/HyyWd2XI1EE?si=m75sksZSwqxcurRt"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>
+                    <h2>Los asesinos de la luna</h2>
+                    <p>Ambientada en la Oklahoma de la década de 1920, narra los asesinatos en serie de los miembros de la nación indígena Osage, que era muy rica en petróleo;
+                        una serie de crímenes brutales que más tarde se conocería como el "Reinado del Terror". </p>
+                    <p>Precio: <strong>12.50€</strong></p>
+                    <label for="val4">Valoración: <u>4/10</u></label>
+                    <meter id="val4" min="0" max="100" low="45" high="60" optimum="80" value="40"></meter>
+                </figcaption>
+                <div class="newsFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../media/img/iconos/fav.png" alt="favorito"></button>
+                </div>
+            </figure>
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <!-- Aviso legal -->
+                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../secciones/footer/avisoLegal.html"> Aviso Legal </a>
+
+                    <!-- Contacto -->
+                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../secciones/footer/contacto.html"> Contacto </a>
+
+                    <!-- Sobre -->
+                    <a class="d-inline text-decoration-none text-primary d-inline" href="../../secciones/footer/about.html"> Sobre EpicSodes </a>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Autor -->
+                    <p class="mb-1 d-inline me-5">© Aitor Moreno Iborra - 2º DAM/DAW - 2024</p>
+
+                    <!-- Redes sociales -->
+                    <section class="d-inline justify-content-center mb-3 d-inline me-5">
+                        <a class="me-2" href="https://www.facebook.com">
+                            <img src="/media/img/rrss/facebook.png" alt="Facebook" height="30">
+                        </a>
+                        <a class="me-2" href="https://www.instagram.com">
+                            <img src="/media/img/rrss/instagram.png" alt="Instagram" height="30">
+                        </a>
+                        <a href="https://www.youtube.com">
+                            <img src="/media/img/rrss/youtube.png" alt="Youtube" height="30">
+                        </a>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

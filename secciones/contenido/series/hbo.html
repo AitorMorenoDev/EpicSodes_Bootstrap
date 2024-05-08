@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../../scss/screen.scss">
+    <link rel="stylesheet" href="../../../scss/contenido.scss">
+    <link rel="stylesheet" href="../../../scss/customBoostrap.scss">
+    <link rel="stylesheet" href="../../../scss/estiloBoostrap.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicSodes | Página principal</title>
+    <link rel="icon" href="../../../media/img/logo.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <!--Navbar-->
+    <div class="row fila1">
+        <nav class="navbar navbar-expand-md navbar-light bg-body">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="../../../index.html">
+                <img src="../../../media/img/logo.png" alt="Logo" width="128" height="128">
+                <p id="nombreWeb" class="pt-3">EpicSodes</p>
+            </a>
+
+            <!-- Botón hamburguesa (de md hacia abajo) -->
+            <button class="navbar-toggler d-block d-md-none me-5" type="button" data-bs-toggle="collapse" data-bs-target="#desplegable"
+                    aria-controls="desplegable" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse ps-3 me-md-5" id="desplegable">
+                <!-- Barra de búsqueda desktop -->
+                <form class="form my-2 my-lg-0 w-75 d-md-flex flex-nowrap d-none">
+                    <input class="form-control mr-sm-2 bg-body-secondary me-2" type="search" aria-label="Buscar">
+                    <button class="btn btn-outline-secondary text-dark my-2 my-sm-0 me-2" type="submit">Buscar</button>
+                </form>
+
+                <!-- Menú de navegacion (contenido, home, perfil, carrito) -->
+                <ul id="menuNav" class="navbar-nav nav-pills flex-row">
+
+                    <!-- Contenido -->
+                    <li class="nav-item dropdown me-5 me-md-2 me-lg-4">
+                        <a class="nav-link dropdown-toggle" href="../../../secciones/contenido/peliculas.html" role="button" id="dropdownContenido"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img src="../../../media/img/iconos/films.png" alt="Contenido" width="30" height="30">
+                        </a>
+
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownContenido">
+
+                            <!-- Novedades -->
+                            <li><a class="dropdown-item" href="../../../secciones/contenido/novedades.html">Novedades</a></li>
+
+                            <!-- Películas -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="../../../secciones/contenido/peliculas.html">Películas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/peliculas/accion.html">Acción</a></li>
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/peliculas/cienciaficcion.html">Ciencia Ficción</a></li>
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/peliculas/comedia.html">Comedia</a></li>
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/peliculas/thriller.html">Thriller</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Series -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="../../../secciones/contenido/series.html">Series</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/series/netflix.html">Netflix</a></li>
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/series/hbo.html">HBO</a></li>
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/series/amazonprime.html">Amazon Prime</a></li>
+                                    <li><a class="dropdown-item" href="../../../secciones/contenido/series/disneyplus.html">Disney+</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Favoritos -->
+                            <li><a class="dropdown-item" href="../../../secciones/contenido/favoritos.html">Favoritos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Home -->
+                    <li class="nav-item active me-5 me-md-2 me-lg-4">
+                        <a class="nav-link" href="../../../index.html">
+                            <img src="../../../media/img/iconos/home.png" width="30" height="30" alt="Home">
+                        </a>
+                    </li>
+
+                    <!-- Perfil -->
+                    <li class="nav-item active dropdown me-5 me-md-2 me-lg-4">
+                        <a class="text-primary nav-link dropdown-toggle" href="../../../secciones/navbar/perfil.html" role="button" id="dropdownPerfil"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img src="../../../media/img/iconos/profile.png" width="30" height="30" alt="Perfil">
+                        </a>
+
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownPerfil">
+                            <li><a class="dropdown-item" href="../../../secciones/navbar/perfil.html">Perfil</a></li>
+                            <li><a class="dropdown-item" href="../../../secciones/navbar/preferencias.html">Preferencias</a></li>
+                            <li><a class="dropdown-item" href="../../../secciones/navbar/registro.html">Registro</a></li>
+                            <li><a class="dropdown-item" href="../../../index.html">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Carrito -->
+                    <li class="nav-item active me-5 me-md-2 me-lg-4">
+                        <a class="nav-link" href="../../../secciones/navbar/carrito.html">
+                            <img src="../../../media/img/iconos/cart.png" width="30" height="30" alt="Carrito">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Barra de búsqueda -->
+                <form class="form my-2 my-lg-0 w-100 d-flex d-md-none flex-nowrap">
+                    <input class="form-control mr-sm-2 bg-body-secondary me-2 rounded-5" type="search" aria-label="Buscar">
+                    <button class="btn btn-outline-secondary text-dark my-2 my-sm-0 me-2" type="submit">Buscar</button>
+                </form>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Main -->
+    <div class="contenidoPrincipal">
+
+        <!-- Contenido de la página -->
+        <main class="mainContent">
+            <figure class="productCard">
+                <img src="../../../media/img/series/hbo/tlou.jpg" alt="The last of us">
+                <figcaption>
+                    <h2>The last of us</h2>
+                    <p>Veinte años después de la destrucción de la civilización moderna a causa de un hongo -el cordyceps- que se adueña del cuerpo de los humanos, uno de los supervivientes,
+                        Joel, recibe el encargo de sacar a la joven Ellie de una opresiva zona de cuarentena. Juntos cruzan Estados Unidos ayudándose mutuamente para intentar sobrevivir.</p>
+                    <p>Precio: 9.95€</p>
+                </figcaption>
+                <div class="productFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+                </div>
+            </figure>
+            <figure class="productCard">
+                <img src="../../../media/img/series/hbo/wire.jpg" alt="The wire">
+                <figcaption>
+                    <h2>The wire</h2>
+                    <p>En los barrios bajos de Baltimore, se investiga un asesinato relacionado con el mundo de las drogas. Un policía es el encargado de detener a los miembros de un importante cártel.
+                        La corrupción policial, las frágiles lealtades dentro de los cárteles y la miseria vinculada al narcotráfico son algunos de los problemas denunciados en esta serie.</p>
+                    <p>Precio: 9.95€</p>
+                </figcaption>
+                <div class="productFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+                </div>
+            </figure>
+            <figure class="productCard">
+                <img src="../../../media/img/series/hbo/got.jpg" alt="Juego de tronos">
+                <figcaption>
+                    <h2>Juego de tronos</h2>
+                    <p>Tras un largo verano de varios años, el temible invierno se acerca a los Siete Reinos. Lord Eddard 'Ned' Stark, señor de Invernalia,
+                        deja sus dominios para ir a la corte de su amigo, el rey Robert Baratheon, en Desembarco del Rey, la capital de los Siete Reinos.
+                        Stark se convierte en la Mano del Rey e intenta desentrañar una maraña de intrigas que pondrá en peligro su vida y la de todos los suyos.
+                        Mientras tanto, diversas facciones conspiran con un solo objetivo: apoderarse del trono.</p>
+                    <p>Precio: 7.50€</p>
+                </figcaption>
+                <div class="productFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+                </div>
+            </figure>
+            <figure class="productCard">
+                <img src="../../../media/img/series/hbo/soprano.jpg" alt="Los Soprano">
+                <figcaption>
+                    <h2>Los Soprano</h2>
+                    <p>Crónica de la vida cotidiana y de las aventuras personales y profesionales de una familia mafiosa que vive en Nueva Jersey. Son gentes sencillas,
+                        pero implacables en sus ritos y tradiciones. La trama se basa en las confidencias del "capo" Tony Soprano a su psicoanalista, la doctora Melfi.</p>
+                    <p>Precio: 4.95€</p>
+                </figcaption>
+                <div class="productFooter">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-favoritos"><img src="../../../media/img/iconos/fav1.png" alt="favorito"></button>
+                </div>
+            </figure>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-body-secondary p-2 rounded-4 text-center ms-2 me-2 mb-3">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <!-- Aviso legal -->
+                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../../secciones/footer/avisoLegal.html"> Aviso Legal </a>
+
+                    <!-- Contacto -->
+                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../../secciones/footer/contacto.html"> Contacto </a>
+
+                    <!-- Sobre -->
+                    <a class="d-inline text-decoration-none text-primary d-inline" href="../../../secciones/footer/about.html"> Sobre EpicSodes </a>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Autor -->
+                    <p class="mb-1 d-inline me-5">© Aitor Moreno Iborra - 2º DAM/DAW - 2024</p>
+
+                    <!-- Redes sociales -->
+                    <section class="d-inline justify-content-center mb-3 d-inline me-5">
+                        <a class="me-2" href="https://www.facebook.com">
+                            <img src="/media/img/rrss/facebook.png" alt="Facebook" height="30">
+                        </a>
+                        <a class="me-2" href="https://www.instagram.com">
+                            <img src="/media/img/rrss/instagram.png" alt="Instagram" height="30">
+                        </a>
+                        <a href="https://www.youtube.com">
+                            <img src="/media/img/rrss/youtube.png" alt="Youtube" height="30">
+                        </a>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

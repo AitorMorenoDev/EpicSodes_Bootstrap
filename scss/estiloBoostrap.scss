@@ -1,0 +1,41 @@
+// Los menús se despliegan en hover y no al hacer click.
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+// Los submenús se despliegan en hover también y hacia la derecha.
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  margin-left: 100%;
+  margin-top: -40px;
+}
+
+.dropdown-submenu {
+  position: relative;
+  width: 80%;
+  max-width: 80%;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// En pantallas pequeñas, los menús no se despliegan.
+@media (max-width: 767px) {
+  .dropdown:hover > .dropdown-menu {
+    display: none;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+footer section a, .btn-group a {
+  text-decoration: none;
+}
+
+#menuPerfil, #menuContenido {
+  margin: auto;
+}

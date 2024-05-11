@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EpicSodes | Página principal</title>
+    <title>EpicSodes | Preferencias</title>
     <link rel="icon" href="../../media/img/logo.png"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -238,7 +238,25 @@
 
             <!-- Botón de enviar -->
             <div class="mb-3">
-                <button type="submit" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPreferencias">Guardar</button>
+            </div>
+
+            <div class="modal fade" id="modalPreferencias" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalPreferenciasLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalPreferenciasLabel">¿Guardar cambios?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¿Estás seguro de querer guardar los cambios?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Sí, guardar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No, volver atrás</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
     </main>
@@ -249,13 +267,13 @@
             <div class="row mb-3">
                 <div class="col-12">
                     <!-- Aviso legal -->
-                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../secciones/footer/avisoLegal.html"> Aviso Legal </a>
+                    <a class="text-primary mb-1 me-5" href="../../secciones/footer/avisoLegal.html"> Aviso Legal </a>
 
                     <!-- Contacto -->
-                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../secciones/footer/contacto.html"> Contacto </a>
+                    <a class="text-primary mb-1 me-5" href="../../secciones/footer/contacto.html"> Contacto </a>
 
                     <!-- Sobre -->
-                    <a class="d-inline text-decoration-none text-primary d-inline" href="../../secciones/footer/about.html"> Sobre EpicSodes </a>
+                    <a class="d-inline text-primary d-inline" href="../../secciones/footer/about.html"> Sobre EpicSodes </a>
 
 
                 </div>
@@ -278,6 +296,8 @@
                             <img src="/media/img/rrss/youtube.png" alt="Youtube" height="30">
                         </a>
                     </section>
+
+
                 </div>
             </div>
         </div>

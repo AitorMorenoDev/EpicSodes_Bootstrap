@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../scss/customBoostrap.scss">
     <link rel="stylesheet" href="../../scss/estiloBoostrap.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EpicSodes | Página principal</title>
+    <title>EpicSodes | Contacto</title>
     <link rel="icon" href="../../media/img/logo.png"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -131,19 +131,19 @@
             <form class="card mb-4 shadow p-4 col-12 col-md-5 me-5">
                 <p class="lead">Puedes contactar con nosotros a través del siguiente formulario:</p>
 
-                <div class="form-group">
+                <div class="form-floating">
+                    <input type="text" id="nombre" name="nombre" class="form-control bg-body-secondary mb-3" placeholder="Nombre" required>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" class="form-control bg-body-secondary mb-3" required>
                 </div>
 
-                <div class="form-group">
+                <div class="form-floating">
+                    <input type="email" id="email" name="email" class="form-control bg-body-secondary mb-3" placeholder="Email" required>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control bg-body-secondary mb-3" required>
                 </div>
 
-                <div class="form-group">
+                <div class="form-floating">
+                    <textarea id="mensaje" name="mensaje" class="form-control bg-body-secondary mb-3" placeholder="Nombre" style="height: 200px" required></textarea>
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" class="form-control bg-body-secondary mb-3" required></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-success mt-3 mb-3">Enviar</button>
@@ -179,13 +179,13 @@
             <div class="row mb-3">
                 <div class="col-12">
                     <!-- Aviso legal -->
-                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../secciones/footer/avisoLegal.html"> Aviso Legal </a>
+                    <a class="text-primary mb-1 me-5" href="avisoLegal.html"> Aviso Legal </a>
 
                     <!-- Contacto -->
-                    <a class="text-decoration-none text-primary mb-1 me-5" href="../../secciones/footer/contacto.html"> Contacto </a>
+                    <a class="text-primary mb-1 me-5" href="contacto.html"> Contacto </a>
 
                     <!-- Sobre -->
-                    <a class="d-inline text-decoration-none text-primary d-inline" href="../../secciones/footer/about.html"> Sobre EpicSodes </a>
+                    <a class="d-inline text-primary d-inline" href="about.html"> Sobre EpicSodes </a>
 
 
                 </div>

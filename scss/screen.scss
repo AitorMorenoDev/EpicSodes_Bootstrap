@@ -1,5 +1,4 @@
-// Común a todas las páginas
-//region
+//region Común a todas las páginas
 main {
   text-align: justify;
 }
@@ -15,10 +14,20 @@ main {
   border: 1px solid black;
 }
 
+footer {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
 //endregion
 
-// Index
-//region
+//region Index
 #mainIndex {
   margin: 0 2rem 0 2rem;
   img {
@@ -40,7 +49,7 @@ main {
 }
 //endregion
 
-
+//region Páginas de contenido
 .btn-favoritos {
   background: none;
   border: none;
@@ -58,3 +67,4 @@ main {
     }
   }
 }
+//endregion

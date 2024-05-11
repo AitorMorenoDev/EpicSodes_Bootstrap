@@ -181,29 +181,47 @@
             </section>
 
             <!-- Formulario de pago -->
-            <form class="card mt-4 col-12 col-md-5 p-3 mb-4 rounded-4 shadow">
+            <form class="card mt-4 col-12 col-md-5 p-3 mb-4 rounded-4 shadow was-validated" novalidate>
                 <h2 class="mb-5"> Formulario de pago: </h2>
 
                 <div class="form-group">
                     <label for="titular">Titular de la tarjeta:</label>
-                    <input type="text" id="titular" name="titular" class="form-control bg-body-secondary mb-3" required>
+                    <input type="text" id="titular" name="titular" class="form-control bg-body-secondary mb-1" required>
+                    <div class="invalid-feedback mb-3">
+                        El titular de la tarjeta es obligatorio.
+                    </div>
+                    <div class="valid-feedback mb-3">
+                        El campo 'nombre' es correcto.
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label for="numero">Número de la tarjeta:</label>
-                    <input type="text" id="numero" name="numero" class="form-control bg-body-secondary mb-3" required>
+                    <input type="text" id="numero" name="numero" class="form-control bg-body-secondary mb-1" required>
+                    <div class="invalid-feedback mb-3">
+                        El número de tarjeta es obligatorio.
+                    </div>
+                    <div class="valid-feedback mb-3">
+                        El campo 'tarjeta' es correcto.
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" name="cvv" class="form-control bg-body-secondary w-25 mb-3" required>
+                    <input type="text" id="cvv" name="cvv" class="form-control bg-body-secondary w-25 mb-1" required minlength="3" maxlength="3">
+                    <div class="invalid-feedback mb-3">
+                        El CVV es obligatorio y debe contener 3 dígitos.
+                    </div>
+                    <div class="valid-feedback mb-3">
+                        El campo 'CVV' es correcto.
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label>Fecha de caducidad</label>
                     <div class="row">
-                        <div class="col-3">
-                            <select id="mes" class="form-control bg-body-secondary">
+                        <div class="col-4">
+                            <select id="mes" class="form-control bg-body-secondary" required>
                                 <option value="" selected disabled>Mes</option>
                                 <option value="01">01</option>
                                 <option value="02">02</option>
@@ -218,9 +236,15 @@
                                 <option value="11">11</option>
                                 <option value="12">12</option>
                             </select>
+                            <div class="invalid-feedback mb-3">
+                                Selecciona un mes.
+                            </div>
+                            <div class="valid-feedback mb-3">
+                                El mes es correcto.
+                            </div>
                         </div>/
-                        <div class="col-3">
-                            <select id="anyo" class="form-control bg-body-secondary">
+                        <div class="col-4">
+                            <select id="anyo" class="form-control bg-body-secondary" required>
                                 <option value="" selected disabled>Año</option>
                                 <option value="24">24</option>
                                 <option value="25">25</option>
@@ -230,6 +254,12 @@
                                 <option value="29">29</option>
                                 <option value="30">30</option>
                             </select>
+                            <div class="invalid-feedback mb-3">
+                                Selecciona un año.
+                            </div>
+                            <div class="valid-feedback mb-3">
+                                El año es correcto.
+                            </div>
                         </div>
                     </div>
                 </div>
